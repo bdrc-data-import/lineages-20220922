@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS14883 {
+    bda:L8LS14883  a        adm:AdminData ;
+        adm:adminAbout      bdr:L8LS14883 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "10/L8LS14883.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS14883 ;
+        adm:logEntry        bda:LG53029461F77F0834 , bda:LG8D68D431A0FDBB26 , bda:LG96A7C931C190E8B5 , bda:LGE4F1F17EDD1A826C , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG53029461F77F0834
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-30T15:43:20.256Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted note"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG8D68D431A0FDBB26
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-11-19T09:25:31.284Z"^^xsd:dateTime ;
+        adm:logMessage      "created new lineage"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG96A7C931C190E8B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-09T16:35:17.658Z"^^xsd:dateTime ;
+        adm:logMessage      "added object"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE4F1F17EDD1A826C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-17T16:34:40.953Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV19BDE95230FCB2E4
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P1089 .
+    
+    bdr:EVA1F8CD14504478B6
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P8LS13581 .
+    
+    bdr:L8LS14883  a        :Lineage ;
+        skos:prefLabel      "tshar chen chos kyi rgyal po'i bka' 'bum skor lung nos pa las/ mai rtags yod pa'i brgyud pa/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH00B5E7D4F57DEEA6 , bdr:LH8CE90AA7595CDC67 , bdr:LHF5BCF2BC481CE12F ;
+        :lineageObject      bdr:T208 ;
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTC613CC56E6DE7324 .
+    
+    bdr:LH00B5E7D4F57DEEA6
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P1089 .
+    
+    bdr:LH8CE90AA7595CDC67
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVA1F8CD14504478B6 ;
+        :lineageWho         bdr:P792 .
+    
+    bdr:LHF5BCF2BC481CE12F
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV19BDE95230FCB2E4 ;
+        :lineageWho         bdr:P8LS13581 .
+    
+    bdr:NTC613CC56E6DE7324
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 189" ;
+        :noteSource         bdr:MW1PD107937 .
+}

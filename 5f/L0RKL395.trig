@@ -1,0 +1,130 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L0RKL395 {
+    bda:L0RKL395  a         adm:AdminData ;
+        adm:adminAbout      bdr:L0RKL395 ;
+        adm:facetIndex      20 ;
+        adm:gitPath         "5f/L0RKL395.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L0RKL395 ;
+        adm:logEntry        bda:LG18B5393CD866A773 , bda:LG300D0EF9DD2FAA80 , bda:LG8E07B3C359EF523E , bda:LG93209B48F0D3AC51 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18B5393CD866A773
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-01T10:23:52.187Z"^^xsd:dateTime ;
+        adm:logMessage      "removed note"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG300D0EF9DD2FAA80
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-19T15:39:31.899Z"^^xsd:dateTime ;
+        adm:logMessage      "added object and location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8E07B3C359EF523E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-03T15:02:00.411Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG93209B48F0D3AC51
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-07-12T13:54:16.058Z"^^xsd:dateTime ;
+        adm:logMessage      "first post to dlms"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV3D28CCB57233B5C7
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P1089 .
+    
+    bdr:EV6600804080D01CD1
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3509 .
+    
+    bdr:EV815D2042C6684BD6
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P792 .
+    
+    bdr:EV9F4C08CA3D2A7956
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P786 .
+    
+    bdr:EVB740288DF2D0B6E5
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P787 .
+    
+    bdr:L0RKL395  a         :Lineage ;
+        skos:altLabel       "tshar chen chos kyi rgyal po'i mdzad pa'i lam 'bras brgyud pa'i gsol 'debs kun bzang mar grags pa/ tshar chen chos kyi rgyal po'i gsung la 'jam dbyangs mkhyen brtse dbang phyug gis zin bris gnang ba'i skor thob pa la/ lam 'bras kyi chos 'byung rgyas pa/ snang gsum gyi khrid yig/ 'khor 'das dbyer med kyi lta khrid rgyas pa/ bum dbang gi lam gyi khrid/ gshed dmar spros med kyi bla ma brgyud pa'i lo rgyus/ bskyed rim gyi bshad pa/ spros med kyi khrid yig rgyas pa/ gsang 'dus rim lnga'i khri yig/ sum pa lo tsa'i blo sbyong gi khrid yig/ spyan ras gzigs kharsa pa Ni la brten pa'i snying po don gsum gyi yi ge/ sems nyid ngal gso'i khrid yig rnams kyi lung /"@bo-x-ewts ;
+        skos:prefLabel      "tshar chen chos kyi rgyal po'i mdzad pa'i lam 'bras brgyud pa'i gsol 'debs dang zin bris skor thob pa'i lung brgyud/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH544D05E9039DDB77 , bdr:LH545229FDC44B5C85 , bdr:LH68116E150902C613 , bdr:LHD0C4E6291FB1D355 , bdr:LHF5DF8F23A0F0807C , bdr:LHF878F6B89301E00F ;
+        :lineageObject      bdr:T1543 ;
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT033A38C35DDA56F8 .
+    
+    bdr:LH544D05E9039DDB77
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVB740288DF2D0B6E5 ;
+        :lineageWho         bdr:P791 .
+    
+    bdr:LH545229FDC44B5C85
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV6600804080D01CD1 ;
+        :lineageWho         bdr:P792 .
+    
+    bdr:LH68116E150902C613
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV815D2042C6684BD6 ;
+        :lineageWho         bdr:P787 .
+    
+    bdr:LHD0C4E6291FB1D355
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV3D28CCB57233B5C7 ;
+        :lineageWho         bdr:P3509 .
+    
+    bdr:LHF5DF8F23A0F0807C
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV9F4C08CA3D2A7956 ;
+        :lineageWho         bdr:P1089 .
+    
+    bdr:LHF878F6B89301E00F
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P786 .
+    
+    bdr:NT033A38C35DDA56F8
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 53a6ff." ;
+        :noteSource         bdr:MW29307 .
+}

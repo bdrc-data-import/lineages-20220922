@@ -1,0 +1,138 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS14933 {
+    bda:L8LS14933  a        adm:AdminData ;
+        adm:adminAbout      bdr:L8LS14933 ;
+        adm:facetIndex      22 ;
+        adm:gitPath         "2f/L8LS14933.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS14933 ;
+        adm:logEntry        bda:LG0DEAC6DBF3B76B1A , bda:LG1661597CBF9770A2 , bda:LGC4EA54FA2512C1EC , bda:LGDB87A3C3B5ACD37D , bda:LGF6BA64A05F0E556B , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0DEAC6DBF3B76B1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-09-27T11:02:39.187Z"^^xsd:dateTime ;
+        adm:logMessage      "replaced with the correct Topic (P7326) Associated Lineages"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG1661597CBF9770A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T14:28:20.367Z"^^xsd:dateTime ;
+        adm:logMessage      "added location and short title"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC4EA54FA2512C1EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-11-22T08:34:51.391Z"^^xsd:dateTime ;
+        adm:logMessage      "created new lineage"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDB87A3C3B5ACD37D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-25T15:32:48.199Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF6BA64A05F0E556B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-09T11:20:34.886Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV32E613C8772726B3
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P1316 .
+    
+    bdr:EV59C580BB68EB842A
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3991 .
+    
+    bdr:EV65778C82FCB27505
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3246 .
+    
+    bdr:EVA7EE82A96C6F68F0
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:T10MS11142 .
+    
+    bdr:EVCC541E2AED238469
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3445 .
+    
+    bdr:EVD13EEFE3DC4995B5
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3379 .
+    
+    bdr:L8LS14933  a        :Lineage ;
+        skos:altLabel       "rje btsun kun dga' grol mchog gyis dka' ba brgya phrag du ma'i sgo nas btsal ba'i 'khrid brgya'i skor nos pa la/ sangs rgyas sgom pas glang ri thang pa'i gdan sa bshes gnyen zhang la gsan nas 'phel ba'i thub pa'i zhi gnas sems 'dzin/ spyan ras gzigs kyi snying rje mkha' khyab/ mi g.yo ba'i gtum po bgegs bsrung / sgrol ma'i mngon shes lung ston te bka' gdams lha bzhi'i brgyud pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma'i mngon shes lung ston te bka' gdams lha bzhi'i brgyud pa/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH13C98C1F3B729D9F , bdr:LH1C6C2A7AAFDD2DE6 , bdr:LH26748931397A1553 , bdr:LH4C1C1A0AEA07845A , bdr:LHB4D62CA55FDBF664 , bdr:LHBEB4D0319F39A6B8 , bdr:LHF841BF5206E7259F ;
+        :lineageObject      bdr:T1253 , bdr:T414 ;
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NTB6CAA99695B028A5 .
+    
+    bdr:LH13C98C1F3B729D9F
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVCC541E2AED238469 ;
+        :lineageWho         bdr:P3991 .
+    
+    bdr:LH1C6C2A7AAFDD2DE6
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P7326 .
+    
+    bdr:LH26748931397A1553
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVD13EEFE3DC4995B5 ;
+        :lineageWho         bdr:P3246 .
+    
+    bdr:LH4C1C1A0AEA07845A
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV32E613C8772726B3 ;
+        :lineageWho         bdr:P3445 .
+    
+    bdr:LHB4D62CA55FDBF664
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV65778C82FCB27505 ;
+        :lineageWho         bdr:P1316 .
+    
+    bdr:LHBEB4D0319F39A6B8
+        a                   :LineageHolder ;
+        :lineageDownFrom    bdr:L8LS14929 ;
+        :lineageReceived    bdr:EV59C580BB68EB842A ;
+        :lineageWho         bdr:P2640 .
+    
+    bdr:LHF841BF5206E7259F
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVA7EE82A96C6F68F0 ;
+        :lineageWho         bdr:P3379 .
+    
+    bdr:NTB6CAA99695B028A5
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 200" ;
+        :noteSource         bdr:MW1PD107937 .
+}

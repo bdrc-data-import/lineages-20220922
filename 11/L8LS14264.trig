@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS14264 {
+    bda:L8LS14264  a        adm:AdminData ;
+        adm:adminAbout      bdr:L8LS14264 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "11/L8LS14264.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS14264 ;
+        adm:logEntry        bda:LG9BD5E1450F00DE29 , bda:LGA119A23B711A5BFF , bda:LGC6B866598258D20C , bda:LGEEA9D144D4A6FFCD , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9BD5E1450F00DE29
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-06T10:13:56.524Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA119A23B711A5BFF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-08-08T12:21:37.225Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC6B866598258D20C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T11:42:34.975Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEEA9D144D4A6FFCD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-15T10:29:43.074Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV9D5B322D276B4288
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P650 .
+    
+    bdr:EVDD96C0B9548C8498
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P647 .
+    
+    bdr:L8LS14264  a        :Lineage ;
+        rdfs:comment        "instructional transmission of bali offering"@en ;
+        skos:prefLabel      "gtor chen 'khor lo sogs shog dril du gsal ba'i man ngag rnams phyag len dmar 'khrid du legs par thob pa'i brgyud pa/"@bo-x-ewts ;
+        :lineageHolder      bdr:LHA4A9EBDB82EDCA09 , bdr:LHCDA0E40B610D3547 , bdr:LHFC8C2CF889BA8E77 ;
+        :lineageObject      bdr:T170 ;
+        :lineageType        bdr:LineageDmarKhrid ;
+        :note               bdr:NTE28EC98F5330FCDF .
+    
+    bdr:LHA4A9EBDB82EDCA09
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVDD96C0B9548C8498 ;
+        :lineageWho         bdr:P650 .
+    
+    bdr:LHCDA0E40B610D3547
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV9D5B322D276B4288 ;
+        :lineageWho         bdr:P37 .
+    
+    bdr:LHFC8C2CF889BA8E77
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P647 .
+    
+    bdr:NTE28EC98F5330FCDF
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 304" ;
+        :noteSource         bdr:MW1PD107937 .
+}

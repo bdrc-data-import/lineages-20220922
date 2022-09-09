@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS14093 {
+    bda:L8LS14093  a        adm:AdminData ;
+        adm:adminAbout      bdr:L8LS14093 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "23/L8LS14093.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS14093 ;
+        adm:logEntry        bda:LG1039FEE0637DB485 , bda:LG749F74F9BA6341D2 , bda:LGC1CA1D08011FCC4F , bda:LGC3EC0B75801CAE1E , bda:LGF57A63BBD1BD140B , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1039FEE0637DB485
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T09:35:23.964Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG749F74F9BA6341D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T16:03:56.045Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC1CA1D08011FCC4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-07T10:44:01.646Z"^^xsd:dateTime ;
+        adm:logMessage      "edited according to gsan yig"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC3EC0B75801CAE1E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-15T09:44:54.56Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF57A63BBD1BD140B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-22T09:57:57.65Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV23147710CFDF751C
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P10428 .
+    
+    bdr:EV614C5404E81AB7EB
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P719 .
+    
+    bdr:L8LS14093  a        :Lineage ;
+        rdfs:comment        "oral transmission of yantra yoga ritual text"@en ;
+        skos:altLabel       "zhu lu pa legs pa rgyal mtshan gyis mdzad pa'i drug cu pa'i rtsa tshig la brten nas paN chen blo bzang chos kyi rgyal mtshan gyis mdzad pa'i drug cu pa'i rnam gzhag dam nyams kyi srog gcod mtshon cha 'bar ba'i 'khrul 'khor/ bka' sdod dam can rnam gsum gyi phrin las bskul ba myur mgyogs drag po'i pho nya'i yig cha'i lung dang sa 'khor 'dri lugs dang gnam 'khor rtsigs lugs kyi phyag 'khrid dang bcas pa thob pa'i brgyud pa/"@bo-x-ewts ;
+        skos:prefLabel      "drug cu pa'i rnam gzhag bka' sdod dam can rnam gsum gyi phrin bskul/ sa 'khor 'dri lugs dang gnam 'khor rtsigs lugs kyi lung brgyud/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH2420A518FBFC1A4F , bdr:LH455841FDEE28D085 , bdr:LH83EE42E692CE7C93 , bdr:LH8E7C5E3EBAA38F81 ;
+        :lineageObject      bdr:T288 ;
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTE04F55A645D6F438 .
+    
+    bdr:LH2420A518FBFC1A4F
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P2923 ;
+        :note               bdr:NT0F74DA5B28B3A34C .
+    
+    bdr:LH455841FDEE28D085
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV614C5404E81AB7EB ;
+        :lineageWho         bdr:P37 .
+    
+    bdr:LH83EE42E692CE7C93
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV23147710CFDF751C ;
+        :lineageWho         bdr:P719 .
+    
+    bdr:LH8E7C5E3EBAA38F81
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P10428 .
+    
+    bdr:NT0F74DA5B28B3A34C
+        a                   :Note ;
+        :noteText           "'di rjes bla ma gnyis gsum zhig ma rnyed/"@bo-x-ewts .
+    
+    bdr:NTE04F55A645D6F438
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 226" ;
+        :noteSource         bdr:MW1PD107937 .
+}

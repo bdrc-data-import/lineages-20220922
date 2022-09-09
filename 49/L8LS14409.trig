@@ -1,0 +1,121 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS14409 {
+    bda:L8LS14409  a        adm:AdminData ;
+        adm:adminAbout      bdr:L8LS14409 ;
+        adm:facetIndex      19 ;
+        adm:gitPath         "49/L8LS14409.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS14409 ;
+        adm:logEntry        bda:LG6C0EAD412E459B80 , bda:LG89A089D20156D726 , bda:LG8A4F0702DAD7E929 , bda:LGD7AB740F13910E5C , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6C0EAD412E459B80
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-27T16:28:43.09Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG89A089D20156D726
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-11T10:03:04.852Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8A4F0702DAD7E929
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-09-04T11:46:32.792Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD7AB740F13910E5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T10:37:04.146Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV05FD533DC5C83A39
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P787 .
+    
+    bdr:EV1CBC10D57E8D44C5
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P792 .
+    
+    bdr:EV3153B60F4794E364
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P795 .
+    
+    bdr:EV35DF2BCA7E58B7BE
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P791 .
+    
+    bdr:EV903E4EC34AF8EBAF
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3510 .
+    
+    bdr:L8LS14409  a        :Lineage ;
+        rdfs:comment        "oral transmission of maitri khecari teachings marked as ngag"@en ;
+        skos:prefLabel      "rdo rje rnal 'byor ma rig pa 'dzin pa rtsen ma'am mai tri mkha' spyod du grags pa'i chos skor las/ ngag gi rtags yod pa'i lung brgyud/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH0A2F51E12378EC65 , bdr:LH99413CAB7825CBEC , bdr:LHB4F8B3C4969CBF0D , bdr:LHC49D14C9AC39CD72 , bdr:LHC6772CA6D7DD2844 , bdr:LHE061DEFE84C3C46A ;
+        :lineageObject      bdr:T585 ;
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTF05B838FF474DA76 .
+    
+    bdr:LH0A2F51E12378EC65
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV1CBC10D57E8D44C5 ;
+        :lineageWho         bdr:P787 .
+    
+    bdr:LH99413CAB7825CBEC
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV05FD533DC5C83A39 ;
+        :lineageWho         bdr:P791 .
+    
+    bdr:LHB4F8B3C4969CBF0D
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV903E4EC34AF8EBAF ;
+        :lineageWho         bdr:P37 .
+    
+    bdr:LHC49D14C9AC39CD72
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P792 .
+    
+    bdr:LHC6772CA6D7DD2844
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV3153B60F4794E364 ;
+        :lineageWho         bdr:P3510 .
+    
+    bdr:LHE061DEFE84C3C46A
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV35DF2BCA7E58B7BE ;
+        :lineageWho         bdr:P795 .
+    
+    bdr:NTF05B838FF474DA76
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 389" ;
+        :noteSource         bdr:MW1PD107937 .
+}

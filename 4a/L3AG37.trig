@@ -1,0 +1,107 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L3AG37 {
+    bda:L3AG37  a           adm:AdminData ;
+        adm:adminAbout      bdr:L3AG37 ;
+        adm:facetIndex      18 ;
+        adm:gitPath         "4a/L3AG37.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L3AG37 ;
+        adm:logEntry        bda:LG37D2B35F16B6CA7D , bda:LGD60031825E8BC300 , bda:LGIM88BD19A8AB , bda:LGIMB69100E5D9 , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG37D2B35F16B6CA7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-12-23T11:53:48.13Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGD60031825E8BC300
+        a                   adm:WithdrawData ;
+        adm:logDate         "2014-02-25T16:36:30.146Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn from usage"@en .
+    
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMB69100E5D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T01:25:54.03Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV61DA952945DCC56B
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P5975 .
+    
+    bdr:EV9ED327D025879964
+        a                   :LineageEvent .
+    
+    bdr:EVA9C6A9DD0AC7823C
+        a                   :LineageEvent .
+    
+    bdr:EVB2A6EB1F56C5938A
+        a                   :LineageEvent .
+    
+    bdr:EVB460E1D8F76A5443
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P7986 .
+    
+    bdr:EVF3287D8F14B21EFF
+        a                   :LineageEvent .
+    
+    bdr:L3AG37  a           :Lineage ;
+        skos:prefLabel      "Chaktsa Incarnations/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH0495418CC441ECDF , bdr:LH71736CA3E3EDA67A , bdr:LH775C933646EDBDD4 , bdr:LHBB0997A5F8EA5648 , bdr:LHDCEA9A82AD4F0798 , bdr:LHEF60217031413AA9 ;
+        :lineageType        bdr:LineageNotSpecified .
+    
+    bdr:LH0495418CC441ECDF
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVB460E1D8F76A5443 .
+    
+    bdr:LH71736CA3E3EDA67A
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVA9C6A9DD0AC7823C ;
+        :lineageWho         bdr:P5975 .
+    
+    bdr:LH775C933646EDBDD4
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV9ED327D025879964 .
+    
+    bdr:LHBB0997A5F8EA5648
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV61DA952945DCC56B ;
+        :lineageWho         bdr:P7986 .
+    
+    bdr:LHDCEA9A82AD4F0798
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVF3287D8F14B21EFF .
+    
+    bdr:LHEF60217031413AA9
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVB2A6EB1F56C5938A .
+}

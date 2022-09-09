@@ -1,0 +1,128 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS14783 {
+    bda:L8LS14783  a        adm:AdminData ;
+        adm:adminAbout      bdr:L8LS14783 ;
+        adm:facetIndex      19 ;
+        adm:gitPath         "0a/L8LS14783.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS14783 ;
+        adm:logEntry        bda:LG08FB32B4E2BE33AE , bda:LG484AF0688E13C711 , bda:LG9978F69CFC92257C , bda:LGEAB75D0B4BACCA05 , bda:LGFEF73DE635790EA3 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08FB32B4E2BE33AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-05T09:20:52.71Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG484AF0688E13C711
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-11-08T16:00:21.76Z"^^xsd:dateTime ;
+        adm:logMessage      "created new lineage"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9978F69CFC92257C
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-01-30T12:08:20.466Z"^^xsd:dateTime ;
+        adm:logMessage      "P3630 changed to P1865"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEAB75D0B4BACCA05
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-25T11:21:26.818Z"^^xsd:dateTime ;
+        adm:logMessage      "added object and location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFEF73DE635790EA3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-31T15:50:10.872Z"^^xsd:dateTime ;
+        adm:logMessage      "removed note"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV9E291D2ED9A5D6B8
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3091 .
+    
+    bdr:EVCBFB3A186C21074E
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P1048 .
+    
+    bdr:EVFC478D8839114681
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P0RK569 .
+    
+    bdr:EVFCE6ED8E194D446D
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3903 .
+    
+    bdr:L8LS14783  a        :Lineage ;
+        skos:altLabel       "'gro mgon chos rgyal 'phags pa'i gsung 'bum gyi lung ji ltar nos pa las/ nyi dang pra'i rtags dang rtags med yongs rdzogs kyi brgyud pa/"@bo-x-ewts ;
+        skos:prefLabel      "'gro mgon chos rgyal 'phags pa'i gsung 'bum gyi lung brgyud/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH1A7BD88FF587E404 , bdr:LH49B6B7A3BDEB253A , bdr:LH6A034094DD4479C8 , bdr:LH814465FB6206FB8E , bdr:LH81F10A344C0BD7C7 ;
+        :lineageObject      bdr:T208 ;
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT57DCE76C6B9B282B .
+    
+    bdr:LH1A7BD88FF587E404
+        a                   :LineageHolder ;
+        :lineageDownFrom    bdr:L8LS14780 ;
+        :lineageReceived    bdr:EV9E291D2ED9A5D6B8 ;
+        :lineageWho         bdr:P1865 .
+    
+    bdr:LH49B6B7A3BDEB253A
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVFC478D8839114681 ;
+        :lineageWho         bdr:P3903 .
+    
+    bdr:LH6A034094DD4479C8
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVFCE6ED8E194D446D ;
+        :lineageWho         bdr:P3091 .
+    
+    bdr:LH814465FB6206FB8E
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P1048 .
+    
+    bdr:LH81F10A344C0BD7C7
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVCBFB3A186C21074E ;
+        :lineageWho         bdr:P0RK569 .
+    
+    bdr:NT57DCE76C6B9B282B
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 106" ;
+        :noteSource         bdr:MW1PD107937 .
+}

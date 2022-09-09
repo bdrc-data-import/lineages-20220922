@@ -1,0 +1,139 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS13665 {
+    bda:L8LS13665  a        adm:AdminData ;
+        adm:adminAbout      bdr:L8LS13665 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "0b/L8LS13665.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS13665 ;
+        adm:logEntry        bda:LG21FD14B566AABE31 , bda:LG4C47A22D24B5E9ED , bda:LG6AE244BA2BE652BF , bda:LG8C700E2B621802A6 , bda:LGF886398C9C77BF6C , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG21FD14B566AABE31
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-06T09:30:16.195Z"^^xsd:dateTime ;
+        adm:logMessage      "added object"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG4C47A22D24B5E9ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T15:06:20.36Z"^^xsd:dateTime ;
+        adm:logMessage      "added description to missing holders"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6AE244BA2BE652BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-27T12:22:31.829Z"^^xsd:dateTime ;
+        adm:logMessage      "added type and location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8C700E2B621802A6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-05-06T16:07:22.478Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF886398C9C77BF6C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-31T14:39:45.647Z"^^xsd:dateTime ;
+        adm:logMessage      "removed note"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV062F26767A3C0071
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P101 .
+    
+    bdr:EV29EB3A68B0347CE9
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P5562 .
+    
+    bdr:EV956332C6BA0EA06C
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P1550 .
+    
+    bdr:EVCF75582AE7E7DAC1
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P2565 .
+    
+    bdr:L8LS13665  a        :Lineage ;
+        rdfs:comment        "oral transmission of commentary on bodhipradipada composed by rtses and las chen kun dga' rgyal mtshan"@en ;
+        skos:altLabel       "bka' gdams kyi bstan pa'i gsal byed chen po rtses dang las chen kun dga' rgyal mtshan gyi mdzad pa'i byang chub lam gyi sgron me'i 'grel pa'i lung thob pa'i brgyud pa/"@bo-x-ewts ;
+        skos:prefLabel      "byang chub lam gyi sgron me'i 'grel pa'i lung thob pa'i brgyud pa/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH7B59DAAC7F500AAF , bdr:LHC01A2A8B919BE1F3 , bdr:LHCA6A87E49DA1312D , bdr:LHCD44D69046F3046B , bdr:LHDA2D22B3BB3C8515 , bdr:LHEC5868CD66BEC582 ;
+        :lineageObject      bdr:T238 ;
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT76CE6D98EEF9586B , bdr:NTF5B045972E63FC64 .
+    
+    bdr:LH7B59DAAC7F500AAF
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P101 .
+    
+    bdr:LHC01A2A8B919BE1F3
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV956332C6BA0EA06C ;
+        :lineageWho         bdr:P5562 .
+    
+    bdr:LHCA6A87E49DA1312D
+        a                   :LineageHolder ;
+        :instanceErrata     "one or two lineage holders are missing between las chen (P4271) and panchen bsod nams grags pa (P101)." ;
+        :lineageWho         bdr:P4271 .
+    
+    bdr:LHCD44D69046F3046B
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV062F26767A3C0071 ;
+        :lineageWho         bdr:P1550 .
+    
+    bdr:LHDA2D22B3BB3C8515
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV29EB3A68B0347CE9 ;
+        :lineageWho         bdr:P2565 .
+    
+    bdr:LHEC5868CD66BEC582
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVCF75582AE7E7DAC1 ;
+        :lineageWho         bdr:P37 .
+    
+    bdr:NT76CE6D98EEF9586B
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 70-71" ;
+        :noteSource         bdr:MW1PD107937 ;
+        :noteText           "one or two lineage holders are missing between las chen (P4271) and panchen bsod nams grags pa (P101)."@en .
+    
+    bdr:NTF5B045972E63FC64
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 70-71" ;
+        :noteSource         bdr:MW1PD107937 .
+}

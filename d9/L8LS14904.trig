@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS14904 {
+    bda:L8LS14904  a        adm:AdminData ;
+        adm:adminAbout      bdr:L8LS14904 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "d9/L8LS14904.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS14904 ;
+        adm:logEntry        bda:LG4B286B468AE267C1 , bda:LG7FE3B0590058CE67 , bda:LG80C2C0A0F03FBDCC , bda:LGC611A88BCE8D3D5B , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4B286B468AE267C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-12T14:22:48.045Z"^^xsd:dateTime ;
+        adm:logMessage      "added object"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG7FE3B0590058CE67
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-25T14:46:32.195Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG80C2C0A0F03FBDCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-30T09:21:00.935Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted note"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC611A88BCE8D3D5B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-11-19T16:44:21.645Z"^^xsd:dateTime ;
+        adm:logMessage      "created new lineage"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV919E019627193340
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P1089 .
+    
+    bdr:L8LS14904  a        :Lineage ;
+        skos:prefLabel      "'jam dbyangs mkhyen brtse'i gsung 'bum las/ zur gyi rtags yod pa'i brgyud pa/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH1DDDA87DF4143D63 , bdr:LHC3CE97FEA8DB5EE1 ;
+        :lineageObject      bdr:T208 ;
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT8124AD9BCE0FFC26 .
+    
+    bdr:LH1DDDA87DF4143D63
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P1089 .
+    
+    bdr:LHC3CE97FEA8DB5EE1
+        a                   :LineageHolder ;
+        :lineageDownFrom    bdr:L8LS14902 ;
+        :lineageReceived    bdr:EV919E019627193340 ;
+        :lineageWho         bdr:P792 .
+    
+    bdr:NT8124AD9BCE0FFC26
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 194" ;
+        :noteSource         bdr:MW1PD107937 .
+}

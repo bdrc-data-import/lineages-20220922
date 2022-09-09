@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L3JT13491 {
+    bda:L3JT13491  a        adm:AdminData ;
+        adm:adminAbout      bdr:L3JT13491 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "5e/L3JT13491.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L3JT13491 ;
+        adm:logEntry        bda:LG3B15B76438C3441F , bda:LG42A563DB9EFE2E20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B15B76438C3441F
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-01-30T15:46:29.555Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG42A563DB9EFE2E20
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-12T16:10:56.808Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:EV77464969F159837A
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P2CZ7929 .
+    
+    bdr:EV84AA5E3102336A31
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P0RK1073 .
+    
+    bdr:EV8E1ECC74AC913DCC
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3293 .
+    
+    bdr:EVA34278C0D05DA1FE
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P4CZ15088 .
+    
+    bdr:EVA540C6FBB025223E
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P0RK1035 .
+    
+    bdr:EVF18520901F6C4ED8
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:T104 .
+    
+    bdr:L3JT13491  a        :Lineage ;
+        skos:prefLabel      "ma hA ma ya'i brgyud pa/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH1E6ED9FD092C4BC0 , bdr:LH4D694C0E4679895A , bdr:LH820C0374D0032066 , bdr:LH9BC87EA37B41CA0B , bdr:LHBA06995E11BEC2CE , bdr:LHBC77EDAC27762C22 , bdr:LHCEABCD69546C46A7 ;
+        :lineageObject      bdr:T2GS1087 ;
+        :lineageRef         bdr:L3JT13485 , bdr:L3JT13487 , bdr:L3JT13489 , bdr:L3JT13491 , bdr:L3JT13492 ;
+        :lineageType        bdr:LineageRingBrgyud ;
+        :note               bdr:NTE7CF67EB14240380 .
+    
+    bdr:LH1E6ED9FD092C4BC0
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVF18520901F6C4ED8 ;
+        :lineageWho         bdr:P0RK1073 .
+    
+    bdr:LH4D694C0E4679895A
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV84AA5E3102336A31 ;
+        :lineageWho         bdr:P4CZ15088 .
+    
+    bdr:LH820C0374D0032066
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVA540C6FBB025223E ;
+        :lineageWho         bdr:P2CZ7929 .
+    
+    bdr:LH9BC87EA37B41CA0B
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV77464969F159837A ;
+        :lineageWho         bdr:P2387 .
+    
+    bdr:LHBA06995E11BEC2CE
+        a                   :LineageHolder ;
+        :lineageWho         bdr:T104 .
+    
+    bdr:LHBC77EDAC27762C22
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV8E1ECC74AC913DCC ;
+        :lineageWho         bdr:P0RK1035 .
+    
+    bdr:LHCEABCD69546C46A7
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVA34278C0D05DA1FE ;
+        :lineageWho         bdr:P3293 .
+    
+    bdr:NTE7CF67EB14240380
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
+}

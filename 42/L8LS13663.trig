@@ -1,0 +1,135 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS13663 {
+    bda:L8LS13663  a        adm:AdminData ;
+        adm:adminAbout      bdr:L8LS13663 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "42/L8LS13663.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS13663 ;
+        adm:logEntry        bda:LG35384E54C75EB924 , bda:LGBD5EFD117E0E53F6 , bda:LGC999C6A69EF88906 , bda:LGDB8A111E0368B34E , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35384E54C75EB924
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-05-06T14:16:42.716Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBD5EFD117E0E53F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-31T14:59:59.464Z"^^xsd:dateTime ;
+        adm:logMessage      "removed note"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC999C6A69EF88906
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-27T12:05:29.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added type and location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDB8A111E0368B34E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-06T09:27:19.968Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV25C3681D00B2D30A
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P84 .
+    
+    bdr:EV325A7AD6AF5F9593
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P2565 .
+    
+    bdr:EV6CAC8AD6E7A6ECD3
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P55 .
+    
+    bdr:EV8881AEB2A915F5B1
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3116 .
+    
+    bdr:EVB12DFF58E1678E3D
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P715 .
+    
+    bdr:L8LS13663  a        :Lineage ;
+        rdfs:comment        "oral and explanation transmission lineage of jatakamala"@en ;
+        skos:prefLabel      "'khrungs rabs so bzhi pa'i bshad lung rdzogs par thob pa'i brgyud pa/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH2474DC86879CAAE2 , bdr:LH340DC116E9BACB53 , bdr:LH6DA4C6414CF70B38 , bdr:LHA2851EA982C30165 , bdr:LHA6DF9136F9E58EE4 , bdr:LHBA48FE8AD5BFAEBE ;
+        :lineageObject      bdr:T1342 ;
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT7B6E3D14C4354707 , bdr:NT8E7EF45FF67A00B9 .
+    
+    bdr:LH2474DC86879CAAE2
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVB12DFF58E1678E3D ;
+        :lineageWho         bdr:P2565 .
+    
+    bdr:LH340DC116E9BACB53
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV6CAC8AD6E7A6ECD3 ;
+        :lineageWho         bdr:P3116 .
+    
+    bdr:LH6DA4C6414CF70B38
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P84 .
+    
+    bdr:LHA2851EA982C30165
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV8881AEB2A915F5B1 ;
+        :lineageWho         bdr:P715 .
+    
+    bdr:LHA6DF9136F9E58EE4
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV25C3681D00B2D30A ;
+        :lineageWho         bdr:P55 .
+    
+    bdr:LHBA48FE8AD5BFAEBE
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV325A7AD6AF5F9593 ;
+        :lineageWho         bdr:P37 .
+    
+    bdr:NT7B6E3D14C4354707
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 62" ;
+        :noteSource         bdr:MW1PD107937 ;
+        :noteText           "lineage before the second dalai lama is not known"@en .
+    
+    bdr:NT8E7EF45FF67A00B9
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 62" ;
+        :noteSource         bdr:MW1PD107937 .
+}

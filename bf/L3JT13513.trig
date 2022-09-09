@@ -1,0 +1,119 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L3JT13513 {
+    bda:L3JT13513  a        adm:AdminData ;
+        adm:adminAbout      bdr:L3JT13513 ;
+        adm:facetIndex      20 ;
+        adm:gitPath         "bf/L3JT13513.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L3JT13513 ;
+        adm:logEntry        bda:LG47E9FC08DC6435D7 , bda:LGD1759350B78812F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG47E9FC08DC6435D7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-12T16:10:57.953Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGD1759350B78812F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-12-03T14:31:19.06Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:EV4658E1F32A2A7FAB
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3JT13514 .
+    
+    bdr:EV7B61A0AB96449224
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P2787 .
+    
+    bdr:EVB3B667C92F34EC51
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P5713 .
+    
+    bdr:EVC97BD678DA9ACF87
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P2778 .
+    
+    bdr:EVEAA63A1E2C268CE0
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P2780 .
+    
+    bdr:EVF4904037D1B1AF68
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P2781 .
+    
+    bdr:L3JT13513  a        :Lineage ;
+        skos:prefLabel      "rgyud sde lnga'i mngon dkyil/ mchod phreng rnams/ mnyam med sangs rgyas dpal bas mdzad pa'i lung yang thob/ mkha' 'gro nai gu'i gdams pa/ khyung pos yon du phul bas gser chos bzhir grags pa/ chos drug/ phyag chen/ lam khyer/ 'chi med de rtsa ba'i khrid chen bzhi dang / byin rlabs khog dbub ('bubs) kyi bka' gnyis/ gzhung shing gi bka' brgyad/ phyag chen bka' lnga/ mkha' spyod bka' lnga/ mgon po bka' lnga ste/ dbang khrid spel mar thob pa'i brgyud pa/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH09B73EA77D5DE38E , bdr:LH22AE9A9613E68234 , bdr:LH863829407609F36C , bdr:LH947EABADAC6ED386 , bdr:LHA2F4E18B5CB69770 , bdr:LHE9B4A9434D3DDE21 , bdr:LHF60126562388A21D ;
+        :lineageObject      bdr:T1483 , bdr:T15 , bdr:T165 , bdr:T1824 , bdr:T1826 , bdr:T1827 , bdr:T199 , bdr:T2058 , bdr:T233 , bdr:T2549 , bdr:T2563 , bdr:T390 , bdr:T394 , bdr:T615 , bdr:W22003 ;
+        :lineageRef         bdr:L3JT13500 , bdr:L3JT13501 , bdr:L3JT13502 , bdr:L3JT13503 , bdr:L3JT13504 , bdr:L3JT13506 , bdr:L3JT13509 , bdr:L3JT13511 , bdr:L3JT13512 , bdr:L3JT13515 , bdr:L3JT13518 ;
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT0FF345313C18A666 , bdr:NT63A7E3E8B2039D2A , bdr:NTE1227A5CFA5E4A3E .
+    
+    bdr:LH09B73EA77D5DE38E
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVB3B667C92F34EC51 ;
+        :lineageWho         bdr:P2780 .
+    
+    bdr:LH22AE9A9613E68234
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVC97BD678DA9ACF87 ;
+        :lineageWho         bdr:P2787 .
+    
+    bdr:LH863829407609F36C
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVEAA63A1E2C268CE0 ;
+        :lineageWho         bdr:P3JT13514 .
+    
+    bdr:LH947EABADAC6ED386
+        a                   :LineageHolder ;
+        :lineageDownFrom    bdr:L3JT13515 ;
+        :lineageReceived    bdr:EV4658E1F32A2A7FAB ;
+        :lineageWho         bdr:P2778 ;
+        :note               bdr:NT2AD02B267A68B654 .
+    
+    bdr:LHA2F4E18B5CB69770
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P2781 .
+    
+    bdr:LHE9B4A9434D3DDE21
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVF4904037D1B1AF68 ;
+        :lineageWho         bdr:P5713 .
+    
+    bdr:LHF60126562388A21D
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV7B61A0AB96449224 ;
+        :lineageWho         bdr:P2387 .
+    
+    bdr:NT0FF345313C18A666
+        a                   :Note ;
+        :noteText           "yang brgyud lugs gcig la/ rdo rje 'chang nas nags kyi rin chen gyi bar (L3JT13512) ang grangs de nyid lrar yin/ mus chen rgyal mtshan dpal bzang nas gsham gsal ltar/"@en .
+    
+    bdr:NT2AD02B267A68B654
+        a                   :Note ;
+        :noteText           "brgyud lugs gcig la/"@bo-x-ewts .
+    
+    bdr:NT63A7E3E8B2039D2A
+        a                   :Note ;
+        :contentLocationStatement  "ff. 247r-250r" ;
+        :noteText           "བརྒྱུད་པ་བཅུ་གཉིས་ཀྱི་བཀའ་བབས་འཛོམས་པའི་ཆོས་སྐོར་ལ། གསེར་ཆོས་སོ་སོའི་རྡོ་རྗེ་ཚིག་རྐང་། ཆོས་དྲུག་ཕྱག་ཆེན་གྱི་ཚིག་གསལ། ཆོས་དྲུག་ཐེམས་ཡིག། གཞི་ལམ་འབྲས་གསུམ། རྒྱ་གར་མཁའ་འགྲོ་མའི་གདམས་པ་བཅོ་ལྔ། ཁྱུང་པོའི་ཉམས་ལེན་དྲུག་ལྡན། སྦྱང་བ་རྣམ་གཉིས། སྒྱུ་ལུས་འབྱམས་གཅོད། སྒྱུ་ལུས་གདན་ཐོག་གཅིག་མ། ཉམས་མྱོང་ཡོན་ཏན་རྒྱ་མཚོ། རིན་པོ་ཆེ་འོད་ཀྱིས་ཕྲེང་བ། ལམ་དྲི་མེད་འོད་ཕྲེང་། དུག་གསུམ་དག་བྱེད། ཞུས་ལན་ཟླ་བའི་དཀྱིལ་འཁོར། ཞུས་ལན་ཉི་མའི་དཀྱིལ་འཁོར། སྒྱུ་ལུས་འཛིན་པ་རང་གྲོལ་ཏེ་གོང་མའི་ཡིག་རྙིང་རྣམས་དང་། ཆོས་དྲུག་ཁྲིད་ཡིག་འཇག་ཆེན་པས་མཛད་པ། དེའི་ལྷན་ཐབས། ཆོས་དྲུག་ཁྲིད་ཡིག་གཞོན་ནུ་གྲུབ་གྱིས་མཛད་པ། དེའི་ལྷན་ཐབས། ཞང་བྱང་ཤེས ༼ཞང་སྟོང་བྱང་ཆུབ་ཤེས་རབ༽ །མཛད་པ་དང་། རྡོ་རྗེའི་མདུད་གྲོལ་བྲག་ཆེན་རྡོ་རྗེ་དཔལ་གྱིས་མཛད་པ། ཆོས་དྲུག་ཁྲིད་ཡིག་མུས་ཆེན་རྒྱལ་མཚན་དཔལ་བཟང་པོས་མཛད་པ། སྐབས་སུ་ཉེར་མཁོའི་མོས་གུས་ཀྱི་ལུང་དང་། སྒྱུ་ལུས་ཀྱི་གཏམ་རྒྱུད། དམིགས་པ་ལྔ་སྐོར། གསུམ་སྐོར། སྣང་བ་སེམས་ཁྲིད། འོད་གསལ་མཆར་སྒོ་ངོས་འཛིན། འཕོ་བའི་ཡིག་ཆུང་། བར་དོ་གསུམ་གྱི་རྣམ་བཤད་ཁྱུང་པས་མཛད་པ། བར་དོའི་ཞལ་གདམས་ཕྲན་རྣམས་དང་། སྒྱུ་མ་ལམ་རིམ་རྩ་འགརལ། ཞལ་གདམས་བཀའ་རྒྱ་མའི་སྐོར་ལ། ཆོས་ཕྲན་ཉི་ཤུ་རྩ་ལྔ། སྒྱུ་ལུས་དབང་མོ་ཆེ་ཆོས་དྲུག་ཟུར་བཀའ་རྣམས་ཀྱི་དབང་ཆོག་ཁྱུང་པོས་མཛད་པ། བདེ་མཆོ་སྐུ་གསུང་ཐུགས་ཀྱི་གསང་སྒྲུབ། བདེ་མཆོག་མཁའ་སྤྱོད་རིག་འཛིན། དབུ་མ་ཡིག་བདུན། བདེ་མཆོག་ལྷ་ལྔའི་རྒྱ་གཞུང་། ཁྱུང་པོས་མཛད་པའི་མངོན་རྟོགས་ཆེན་མོ། དེའི་ལག་ལེན་དུ། མངོན་རྟོགས། མཆོད་ཕྲེང་། བདག་འཇུག། ཚོགས་འཁོར། བདུན་ཚིགས་རྣམས་འཇག་ཆེན་པས་མཛད་པ། རྒྱུད་སྡེ་ལྔའི་ལུས་དཀྱིལ་ཁྱུང་པོས་མཛད་པ་དང་། འདི་དང་བདེ་མཆོག་གཉིས་ཀའི་དབང་བཞི་ལུས་སྒྲིག་ཕྱག་ཆེན་ཁྲིད་ཡིག། འཇག་བསམ་གཉིས་ཀའི་ཞིབ་བཀོད་མཆན་བཅས། སེམས་ཚོལ་ཡིག་ཆུང་ལོ་རྒྱུས་མ། ངོ་སྤྲོད་ལྷན་ཐབས་ཀྱི་ཡིག་རྙིང་། ལམ་ཁྱེར་སོ་སོའི་ཁྲིད་ཡིག། མཁའ་སྤྱོད་དཀར་མོའི་རྒྱ་གཞུང་། སྒྲུབ་ཐབས་སྒོ་གཉིས་སྟོང་པ་རིགས་གཉིས། ཚེས་བཅུའི་མཆོད་པ། ལུས་བྱིན་རླབས། མཁའ་སྤྱོད་རིལ་བུ་སྒྲུབ་ཚུལ། བྱིན་རླབས། དབང་ཐོ། མཁའ་སྤྱོད་དམར་མོའི་སྒྲུབ་ཐབས། དབང་ཆོག། འཕོ་བ། ལག་མཆོད། སེམས་འཆི་མེད་ཀྱི་གནད་འདོམས། ཁྱུང་པོ། རྨོག་ཅོག་པ། སྐྱེརྒ་པ། གཉན་སྟོན་པ་རྣམས་ཀྱི་ཐུགས་ནས་ཕྱུང་བ་རེ་རེ། ཁྲིད་ཡིག་འཇག་ཆེན་པས་མཛད་པ། དུག་ལྔ་ལམ་ཁྱེར། ལུས་འཆི་མེད་གྲུབ་པའི་རྒྱ་གཞུང་། བི་རུ་པས་མཛད་པ། དོན་འགྲེལ་ལག་ལེན་གསལ་བྱེད་ཉི་མ་སངས་རྒྱས་སྟོན་པས་མཛད་པ། རླུང་ཤིང་རྟ་ཅན་བུམ་པ་ཅན། ཕྱག་རྒྱ་བཅིང་གྲོལ། ཁྱུང་པོ་མགུར་བརྒྱད། གཅེས་ཕྲེང་སྲིད་འཕེལ་འཁོར་ལོའི་དཔེ་ཆུང་། འཇམ་དཔལ་མཚན་བརྗོད་འདོན་ཐབས། ཕྱག་རྡོར་ཛ་ལི་མའི་སྐོར། དམིགས་པ་རིན་སྒྲོམ་བུ། རྗེས་སུ་ཡི་རང་གི་སྐོར། གཞན་དོན་མི་གྲུབ་མི་སྲིད་པའི་གདམས་པ། ཆང་མཆོད། གྲིབ་སེལ། རྣམ་འཇོམས་གསང་སྒྲུབ། སྨོན་ལམ་བཀྲ་ཤིས་ཏེ་བཀའ་རྒྱ་མ་བཞིའི་བར་དུ་ཐོབ་ཅིང། དེང་སང་ཞལ་གདམས་ཉེར་ལྔའི་ནང་གི་རང་གྲོལ་ཕྱག་རྒྱ་ཆེན་པོ་སོགས་ལ། ཁྲིད་ཆུང་ལྔར་མིང་འདོགས་དང་། མཁའ་སྤྱོད་དཀར་དམར་བསྣན་ནས། གསེར་ཆོས་ལྔར་འདོད་པ་སོགས་ནི་རྟོགས་རྟགས་ཡིན་ཏེ། སྔ་མ་ནི་གའུ་མའི་རྒྱས་འདེབས་ཡིན་པས། ལོགས་སུ་འདྲེན་དུ་མེད་ལ། མཁའ་སྤྱོད་གཉིས་ལ། ཡོན་དུ་གསེར་ཕུལ་བའི་དམིགས་བསལ་མེད་པས། གསེར་ཅེས་མིང་ཐོབ་མེད་དོ། །མཉམ་མེད་སངས་རྒྱས་དཔལ་བཟང་གིས་མཛད་པའི་རྡོ་རྗེ་ཚིག་རྐང་གི་འགྲེལ་ཆེན། ཕྱག་ཆེན། ལམ་ཁྱེར། འཆི་མེད་རྣམས་ཀྱི་རྒྱས་འགྲེལ། སོ་སོའི་ལུང་ཐོབ་མོད། བརྒྱུད་པའི་སྲོལ་ལས་འདས་པས། ཡིད་ཆེས་ཀྱི་གནས་སུ་མི་བཟུང་ངོ་། རིན་ཆེན་བདུན་ནས་རྩའི་བླ་མའི་བར་གྱི་རྣམ་ཐར་སོ་སོའི་ལུང་ཡང་ཐོབ། སུ་ཁ་མ་སིདྡྷིའི་སྐྱེད་རྫོགས་ཆོས་དྲུག་དང་བཅས་པ། ལྟེ་བ་སྦྲུལ་འཁོར། བདག་མེད་མའི་ནང་ཁྲིད། གཟེར་བུ་གསུམ་གྱི་ཞལ་གདམས་རྣམས་དང་། ཐུགས་རྗེ་ཆེན་པོ་སྐྱེརྒང་ལུགས་ཀྱི་ཆོས་སྐོར་ཆ་ཚང་བ།།"@bo .
+    
+    bdr:NTE1227A5CFA5E4A3E
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
+}

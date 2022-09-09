@@ -1,0 +1,147 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L1PD108838 {
+    bda:L1PD108838  a       adm:AdminData ;
+        adm:adminAbout      bdr:L1PD108838 ;
+        adm:facetIndex      24 ;
+        adm:gitPath         "bf/L1PD108838.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L1PD108838 ;
+        adm:logEntry        bda:LG46DB4D6175EC71DB , bda:LG4C3849DDDFBF215C , bda:LG73C1FE58D3723AAA , bda:LGA3EDC455A786F62A , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG46DB4D6175EC71DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-03T14:31:42.226Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG4C3849DDDFBF215C
+        a                   adm:InitialDataCreation ;
+        adm:logMessage      "gsae du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG73C1FE58D3723AAA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-05T15:03:25.443Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA3EDC455A786F62A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-19T12:57:26.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added object and location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV0F899022AB570EAA
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P962 .
+    
+    bdr:EV7F5C19FCFE5A8815
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P9127 .
+    
+    bdr:EVB751779BC7FB5326
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P3297 .
+    
+    bdr:EVCB0F1DE8E5932924
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P812 .
+    
+    bdr:EVCDD2879ABD606BBC
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P7768 .
+    
+    bdr:EVD14EF5D985A44357
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P733 .
+    
+    bdr:EVD4EC3E09A1BBE1AC
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P805 .
+    
+    bdr:L1PD108838  a       :Lineage ;
+        rdfs:seeAlso        bdr:MW23681_79B973 ;
+        skos:altLabel       "mus chen gyi rnam thar bdag chen gyis mdzad pa/"@bo-x-ewts , "rje btsun bla ma dam pa dkon mchog rgyal mtshan dpal bzang po'i rnam par thar pa ngo mtshar phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "mus chen rnam thar ngo mtshar phreng ba/"@bo-x-ewts ;
+        :lineageHolder      bdr:LH05CC9CFF6B110607 , bdr:LH4A57EB3FAF3B2B71 , bdr:LH527064317B6C674E , bdr:LH6E6C5F842EE72DFB , bdr:LH73A9D4B6E8294D7E , bdr:LH9B666B774ED06B38 , bdr:LHD70B16C8F95C213D , bdr:LHEF681E25FD4350AE ;
+        :lineageObject      bdr:T3 ;
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTDFD1AD75FE31A48A .
+    
+    bdr:LH05CC9CFF6B110607
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV7F5C19FCFE5A8815 ;
+        :lineageWho         bdr:P962 .
+    
+    bdr:LH4A57EB3FAF3B2B71
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVCB0F1DE8E5932924 ;
+        :lineageWho         bdr:P733 .
+    
+    bdr:LH527064317B6C674E
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVB751779BC7FB5326 ;
+        :lineageWho         bdr:P9127 .
+    
+    bdr:LH6E6C5F842EE72DFB
+        a                   :LineageHolder ;
+        :lineageWho         bdr:P805 .
+    
+    bdr:LH73A9D4B6E8294D7E
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV0F899022AB570EAA ;
+        :lineageWho         bdr:P7768 .
+    
+    bdr:LH9B666B774ED06B38
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVD14EF5D985A44357 ;
+        :lineageWho         bdr:P1PD108247 .
+    
+    bdr:LHD70B16C8F95C213D
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVD4EC3E09A1BBE1AC ;
+        :lineageWho         bdr:P3297 .
+    
+    bdr:LHEF681E25FD4350AE
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVCDD2879ABD606BBC ;
+        :lineageWho         bdr:P812 .
+    
+    bdr:NTDFD1AD75FE31A48A
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, 25ff." ;
+        :noteSource         bdr:MW2CZ7925 .
+}
