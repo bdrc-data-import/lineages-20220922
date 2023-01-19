@@ -1,14 +1,10 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:L3JT13492 {
@@ -18,7 +14,7 @@ bdg:L3JT13492 {
         adm:gitPath         "0c/L3JT13492.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L3JT13492 ;
-        adm:logEntry        bda:LGD6963B22085977E7 ;
+        adm:logEntry        bda:LGD6963B22085977E7 , bdr:LG0P4CZ15386_RMSGVDEJ61J6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,91 +24,98 @@ bdg:L3JT13492 {
         adm:logWho          bdu:U00013 .
     
     bdr:EV069B3C9D4544B77C
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P47 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P47 .
     
     bdr:EV2582395A852BB5D6
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P3183 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P3183 .
     
     bdr:EV447F18BC56D701EF
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:T1987 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:T1987 .
     
     bdr:EV4D4203FD67FD0A67
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P2CN574 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P2CN574 .
     
     bdr:EV53317CCD53D9E625
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:T1373 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:T1373 .
     
     bdr:EV7557AEA54B184BE5
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P4CZ15386 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P4CZ10542 .
     
     bdr:EVA60A082A3CE4A5B9
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P4CZ15447 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P4CZ15447 .
     
     bdr:EVCC7E853AFCC4655F
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P4CZ10559 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P4CZ10559 .
     
-    bdr:L3JT13492  a        :Lineage ;
+    bdr:L3JT13492  a        bdo:Lineage ;
         skos:altLabel       "rdo rje 'jigs byed kyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje 'jigs byed kyi brgyud pa/"@bo-x-ewts ;
-        :lineageHolder      bdr:LH22C076141868AB19 , bdr:LH3B89F2CF48D0606A , bdr:LH3FC138437DBA68CF , bdr:LH69D5E3DD0EF5DDEB , bdr:LHA6728BA749F752EA , bdr:LHAFC59C2E1591DFBF , bdr:LHB4B570E4E82EF653 , bdr:LHF75F04F5813F6106 , bdr:LHFA17FA43D5ADA424 ;
-        :lineageObject      bdr:T104 ;
-        :lineageRef         bdr:L3JT13485 , bdr:L3JT13487 , bdr:L3JT13489 , bdr:L3JT13491 , bdr:L3JT13492 ;
-        :lineageType        bdr:LineageRingBrgyud ;
-        :note               bdr:NT62F10D0D7E3D69CC .
+        bdo:lineageHolder   bdr:LH22C076141868AB19 , bdr:LH3B89F2CF48D0606A , bdr:LH3FC138437DBA68CF , bdr:LH69D5E3DD0EF5DDEB , bdr:LHA6728BA749F752EA , bdr:LHAFC59C2E1591DFBF , bdr:LHB4B570E4E82EF653 , bdr:LHF75F04F5813F6106 , bdr:LHFA17FA43D5ADA424 ;
+        bdo:lineageObject   bdr:T104 ;
+        bdo:lineageRef      bdr:L3JT13485 , bdr:L3JT13487 , bdr:L3JT13489 , bdr:L3JT13491 , bdr:L3JT13492 ;
+        bdo:lineageType     bdr:LineageRingBrgyud ;
+        bdo:note            bdr:NT62F10D0D7E3D69CC .
+    
+    bdr:LG0P4CZ15386_RMSGVDEJ61J6
+        a                   adm:WithdrawData ;
+        adm:logDate         "2023-01-19T22:28:02.315640Z"^^xsd:dateTime ;
+        adm:logMessage      "withdraw P4CZ15386 in favor of P4CZ10542"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
     
     bdr:LH22C076141868AB19
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV7557AEA54B184BE5 ;
-        :lineageWho         bdr:P4CZ10559 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV7557AEA54B184BE5 ;
+        bdo:lineageWho      bdr:P4CZ10559 .
     
     bdr:LH3B89F2CF48D0606A
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVA60A082A3CE4A5B9 ;
-        :lineageWho         bdr:P3183 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EVA60A082A3CE4A5B9 ;
+        bdo:lineageWho      bdr:P3183 .
     
     bdr:LH3FC138437DBA68CF
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV069B3C9D4544B77C ;
-        :lineageWho         bdr:P2CN574 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV069B3C9D4544B77C ;
+        bdo:lineageWho      bdr:P2CN574 .
     
     bdr:LH69D5E3DD0EF5DDEB
-        a                   :LineageHolder ;
-        :lineageWho         bdr:T1987 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageWho      bdr:T1987 .
     
     bdr:LHA6728BA749F752EA
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV4D4203FD67FD0A67 ;
-        :lineageWho         bdr:P4CZ15386 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV4D4203FD67FD0A67 ;
+        bdo:lineageWho      bdr:P4CZ10542 .
     
     bdr:LHAFC59C2E1591DFBF
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV53317CCD53D9E625 ;
-        :lineageWho         bdr:P47 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV53317CCD53D9E625 ;
+        bdo:lineageWho      bdr:P47 .
     
     bdr:LHB4B570E4E82EF653
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV2582395A852BB5D6 ;
-        :lineageWho         bdr:P2387 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV2582395A852BB5D6 ;
+        bdo:lineageWho      bdr:P2387 .
     
     bdr:LHF75F04F5813F6106
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVCC7E853AFCC4655F ;
-        :lineageWho         bdr:P4CZ15447 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EVCC7E853AFCC4655F ;
+        bdo:lineageWho      bdr:P4CZ15447 .
     
     bdr:LHFA17FA43D5ADA424
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV447F18BC56D701EF ;
-        :lineageWho         bdr:T1373 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV447F18BC56D701EF ;
+        bdo:lineageWho      bdr:T1373 .
     
     bdr:NT62F10D0D7E3D69CC
-        a                   :Note ;
-        :noteSource         bdr:MW1KG18291 .
+        a                   bdo:Note ;
+        bdo:noteSource      bdr:MW1KG18291 .
 }
