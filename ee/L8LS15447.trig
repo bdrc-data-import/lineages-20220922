@@ -1,14 +1,10 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:L8LS15447 {
@@ -18,7 +14,7 @@ bdg:L8LS15447 {
         adm:gitPath         "ee/L8LS15447.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS15447 ;
-        adm:logEntry        bda:LG060640551BBB13A1 , bda:LG2FB27350FE74B89A , bda:LG43CC069014268265 ;
+        adm:logEntry        bda:LG060640551BBB13A1 , bda:LG2FB27350FE74B89A , bda:LG43CC069014268265 , bdr:LG0P2JM148_XYY42MVCG7I1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,172 +37,179 @@ bdg:L8LS15447 {
         adm:logWho          bdu:U00019 .
     
     bdr:EV0176D8B02F9BB5E9
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P2JM145 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P2JM145 .
     
     bdr:EV16C81AEF39A1D660
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P633 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P633 .
     
     bdr:EV287D4760C0963E28
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P631 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P631 .
     
     bdr:EV2BFB5E8A61890949
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P8LS15448 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P8LS15448 .
     
     bdr:EV5D06B73ACB2674DC
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:T452 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:T452 .
     
     bdr:EV73665D715FDA24A3
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P3827 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P3827 .
     
     bdr:EV7DEFA38C436559F8
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P5011 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P5011 .
     
     bdr:EV7FC65BD18B9176B0
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P634 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P634 .
     
     bdr:EV85FC0616D6DCA9F6
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:T1804 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:T1804 .
     
     bdr:EV9772AC1A54F4C1DA
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P10718 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P10718 .
     
     bdr:EVA8605764D45987E4
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P4CZ15625 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P4CZ15625 .
     
     bdr:EVA8E7341E990E154E
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P8398 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P8398 .
     
     bdr:EVB00D0B58DA35CDCA
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P0RK119 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P0RK119 .
     
     bdr:EVC3D33751CA01C3E4
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P2JM147 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P2JM147 .
     
     bdr:EVD087CEF029840596
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P2JM148 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P0RK1222 .
     
     bdr:EVDE83A61ED454976E
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P8LS15449 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P8LS15449 .
     
     bdr:EVE2142AAD8DF79064
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P2JM146 .
+        a                   bdo:LineageEvent ;
+        bdo:lineageFrom     bdr:P2JM146 .
     
-    bdr:L8LS15447  a        :Lineage ;
+    bdr:L8LS15447  a        bdo:Lineage ;
         skos:prefLabel      "rdzogs pa chen po gsang skor gyi brgyud pa/"@bo-x-ewts ;
-        :lineageHolder      bdr:LH0211A1C44B458A6D , bdr:LH021BDAADA842F68B , bdr:LH0DE0CBCE7F642F0D , bdr:LH1BFD98F6EF1B6F32 , bdr:LH2BBD744CC3614373 , bdr:LH33FBD955144C9893 , bdr:LH4ACC6E294C2DF306 , bdr:LH4B359FA77DD737B1 , bdr:LH5CD2553F91A40EA5 , bdr:LH6F77C746E3D0B698 , bdr:LH7781C8374DB6D231 , bdr:LHAB7F967944ED05AE , bdr:LHAF3C338361A6DFF0 , bdr:LHAF9B86522798640C , bdr:LHB24CB876C82FF40D , bdr:LHC165B92F0EF49E6B , bdr:LHE4B89A967996C5F3 , bdr:LHF845EE9E84029283 ;
-        :lineageObject      bdr:T354 ;
-        :lineageType        bdr:LineageLung ;
-        :note               bdr:NT9309899BF7C2C079 .
+        bdo:lineageHolder   bdr:LH0211A1C44B458A6D , bdr:LH021BDAADA842F68B , bdr:LH0DE0CBCE7F642F0D , bdr:LH1BFD98F6EF1B6F32 , bdr:LH2BBD744CC3614373 , bdr:LH33FBD955144C9893 , bdr:LH4ACC6E294C2DF306 , bdr:LH4B359FA77DD737B1 , bdr:LH5CD2553F91A40EA5 , bdr:LH6F77C746E3D0B698 , bdr:LH7781C8374DB6D231 , bdr:LHAB7F967944ED05AE , bdr:LHAF3C338361A6DFF0 , bdr:LHAF9B86522798640C , bdr:LHB24CB876C82FF40D , bdr:LHC165B92F0EF49E6B , bdr:LHE4B89A967996C5F3 , bdr:LHF845EE9E84029283 ;
+        bdo:lineageObject   bdr:T354 ;
+        bdo:lineageType     bdr:LineageLung ;
+        bdo:note            bdr:NT9309899BF7C2C079 .
+    
+    bdr:LG0P2JM148_XYY42MVCG7I1
+        a                   adm:WithdrawData ;
+        adm:logDate         "2023-01-27T23:37:48.364706Z"^^xsd:dateTime ;
+        adm:logMessage      "withdraw P2JM148 in favor of P0RK1222"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
     
     bdr:LH0211A1C44B458A6D
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV85FC0616D6DCA9F6 ;
-        :lineageWho         bdr:T452 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV85FC0616D6DCA9F6 ;
+        bdo:lineageWho      bdr:T452 .
     
     bdr:LH021BDAADA842F68B
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVB00D0B58DA35CDCA ;
-        :lineageWho         bdr:P8LS15449 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EVB00D0B58DA35CDCA ;
+        bdo:lineageWho      bdr:P8LS15449 .
     
     bdr:LH0DE0CBCE7F642F0D
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVE2142AAD8DF79064 ;
-        :lineageWho         bdr:P2JM147 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EVE2142AAD8DF79064 ;
+        bdo:lineageWho      bdr:P2JM147 .
     
     bdr:LH1BFD98F6EF1B6F32
-        a                   :LineageHolder ;
-        :lineageDownFrom    bdr:L8LS15443 ;
-        :lineageReceived    bdr:EV287D4760C0963E28 ;
-        :lineageWho         bdr:P8LS14152 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageDownFrom  bdr:L8LS15443 ;
+        bdo:lineageReceived  bdr:EV287D4760C0963E28 ;
+        bdo:lineageWho      bdr:P8LS14152 .
     
     bdr:LH2BBD744CC3614373
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV16C81AEF39A1D660 ;
-        :lineageWho         bdr:P631 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV16C81AEF39A1D660 ;
+        bdo:lineageWho      bdr:P631 .
     
     bdr:LH33FBD955144C9893
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV7DEFA38C436559F8 ;
-        :lineageWho         bdr:P3827 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV7DEFA38C436559F8 ;
+        bdo:lineageWho      bdr:P3827 .
     
     bdr:LH4ACC6E294C2DF306
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVDE83A61ED454976E ;
-        :lineageWho         bdr:P634 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EVDE83A61ED454976E ;
+        bdo:lineageWho      bdr:P634 .
     
     bdr:LH4B359FA77DD737B1
-        a                   :LineageHolder ;
-        :lineageWho         bdr:T1804 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageWho      bdr:T1804 .
     
     bdr:LH5CD2553F91A40EA5
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVC3D33751CA01C3E4 ;
-        :lineageWho         bdr:P2JM148 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EVC3D33751CA01C3E4 ;
+        bdo:lineageWho      bdr:P0RK1222 .
     
     bdr:LH6F77C746E3D0B698
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV2BFB5E8A61890949 ;
-        :lineageWho         bdr:P0RK119 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV2BFB5E8A61890949 ;
+        bdo:lineageWho      bdr:P0RK119 .
     
     bdr:LH7781C8374DB6D231
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVA8605764D45987E4 ;
-        :lineageWho         bdr:P8398 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EVA8605764D45987E4 ;
+        bdo:lineageWho      bdr:P8398 .
     
     bdr:LHAB7F967944ED05AE
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV7FC65BD18B9176B0 ;
-        :lineageWho         bdr:P633 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV7FC65BD18B9176B0 ;
+        bdo:lineageWho      bdr:P633 .
     
     bdr:LHAF3C338361A6DFF0
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVA8E7341E990E154E ;
-        :lineageWho         bdr:P10718 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EVA8E7341E990E154E ;
+        bdo:lineageWho      bdr:P10718 .
     
     bdr:LHAF9B86522798640C
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV5D06B73ACB2674DC ;
-        :lineageWho         bdr:P0RK998 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV5D06B73ACB2674DC ;
+        bdo:lineageWho      bdr:P0RK998 .
     
     bdr:LHB24CB876C82FF40D
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV73665D715FDA24A3 ;
-        :lineageWho         bdr:P2JM145 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV73665D715FDA24A3 ;
+        bdo:lineageWho      bdr:P2JM145 .
     
     bdr:LHC165B92F0EF49E6B
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVD087CEF029840596 ;
-        :lineageWho         bdr:P8LS15448 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EVD087CEF029840596 ;
+        bdo:lineageWho      bdr:P8LS15448 .
     
     bdr:LHE4B89A967996C5F3
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV0176D8B02F9BB5E9 ;
-        :lineageWho         bdr:P2JM146 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV0176D8B02F9BB5E9 ;
+        bdo:lineageWho      bdr:P2JM146 .
     
     bdr:LHF845EE9E84029283
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV9772AC1A54F4C1DA ;
-        :lineageWho         bdr:P5011 .
+        a                   bdo:LineageHolder ;
+        bdo:lineageReceived  bdr:EV9772AC1A54F4C1DA ;
+        bdo:lineageWho      bdr:P5011 .
     
     bdr:NT9309899BF7C2C079
-        a                   :Note ;
-        :contentLocationStatement  "vol. e, f. 89" ;
-        :noteSource         bdr:MW29706 .
+        a                   bdo:Note ;
+        bdo:contentLocationStatement  "vol. e, f. 89" ;
+        bdo:noteSource      bdr:MW29706 .
 }
